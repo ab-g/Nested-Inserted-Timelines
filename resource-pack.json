@@ -150,6 +150,17 @@
     "map": [
       {
         "key": {
+          "uuid": "04619261-22F4-45AC-9EDF-6FD0144EF052"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "04619261-22F4-45AC-9EDF-6FD0144EF052"
+          }
+        }
+      },
+      {
+        "key": {
           "uuid": "24E507AA-D1F6-440C-9560-E54B9D0CFE5B"
         },
         "value": {
@@ -161,12 +172,56 @@
       },
       {
         "key": {
+          "uuid": "30B487C1-0FBE-444F-A30C-55197A2172E3"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "30B487C1-0FBE-444F-A30C-55197A2172E3"
+          }
+        }
+      },
+      {
+        "key": {
           "uuid": "4D48F86D-ECE2-462D-8509-5CC70644CDBC"
         },
         "value": {
           "@class": "Material",
           "id": {
             "uuid": "4D48F86D-ECE2-462D-8509-5CC70644CDBC"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "79DC0B70-F23B-4364-8822-22311C6477C5"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "79DC0B70-F23B-4364-8822-22311C6477C5"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "A2E98E1A-2B45-44A1-A09B-0683A426DEEA"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "A2E98E1A-2B45-44A1-A09B-0683A426DEEA"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "CC322CB6-0681-4A23-99DE-B6F80AB4B8A7"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "CC322CB6-0681-4A23-99DE-B6F80AB4B8A7"
           }
         }
       }
@@ -194,6 +249,17 @@
           "@class": "Mesh",
           "id": {
             "uuid": "2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "3E6AA105-3196-4EB2-A88F-C22B92F13608"
+        },
+        "value": {
+          "@class": "BoxMesh",
+          "id": {
+            "uuid": "3E6AA105-3196-4EB2-A88F-C22B92F13608"
           }
         }
       }
