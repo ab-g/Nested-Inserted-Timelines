@@ -1,1 +1,254 @@
-{"@class":"ResourcePack","cameras":{"@class":"StdResourceMapCamera","map":[{"key":{"uuid":"99DE5B61-6462-40B9-A813-FBA5AA0FB737"},"value":{"@class":"Camera","id":{"uuid":"99DE5B61-6462-40B9-A813-FBA5AA0FB737"}}}]},"colliders":{"@class":"StdResourceMapCollider","map":[{"key":{"uuid":"3BF92E38-04DF-46A6-A60E-CB76667083A9"},"value":{"@class":"Collider","id":{"uuid":"3BF92E38-04DF-46A6-A60E-CB76667083A9"}}}]},"images":{"@class":"StdResourceMapImage","map":[{"key":{"uuid":"D6B9EBE3-D3D6-444C-8F37-F86FC7039750"},"value":{"@class":"DevILImage","id":{"uuid":"D6B9EBE3-D3D6-444C-8F37-F86FC7039750"}}}]},"lights":{"@class":"StdResourceMapLight","map":[]},"materials":{"@class":"StdResourceMapMaterial","map":[{"key":{"uuid":"4D48F86D-ECE2-462D-8509-5CC70644CDBC"},"value":{"@class":"Material","id":{"uuid":"4D48F86D-ECE2-462D-8509-5CC70644CDBC"}}}]},"meshes":{"@class":"StdResourceMapMesh","map":[{"key":{"uuid":"2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"},"value":{"@class":"Mesh","id":{"uuid":"2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"}}}]},"rigidBodies":{"@class":"StdResourceMapPhysicsBody","map":[{"key":{"uuid":"70D69DB0-8308-441B-BD47-892C70F11781"},"value":{"@class":"PhysicsBody","id":{"uuid":"70D69DB0-8308-441B-BD47-892C70F11781"}}}]},"scenes":{"@class":"StdResourceMapScene","map":[{"key":{"uuid":"1C435217-1F56-4B14-B162-D5571841CD11"},"value":{"@class":"BaseScene","id":{"uuid":"1C435217-1F56-4B14-B162-D5571841CD11"}}}]},"skinControllers":{"@class":"StdResourceMapSkinController","map":[]},"soundSamples":{"@class":"StdResourceMapSoundSample","map":[]},"textures2d":{"@class":"StdResourceMapTexture2D","map":[{"key":{"uuid":"9F6B5CB4-A449-40E5-BC41-C65F6EB0A7F0"},"value":{"@class":"Texture2D","id":{"uuid":"9F6B5CB4-A449-40E5-BC41-C65F6EB0A7F0"}}}]},"texturesCube":{"@class":"StdResourceMapTextureCube","map":[]}}
+{
+  "@class": "ResourcePack",
+  "animations": {
+    "@class": "StdResourceMapAnimation",
+    "map": [
+      {
+        "key": {
+          "uuid": "2AE4837A-FB36-4D08-AB20-A6889B70F9EB"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "2AE4837A-FB36-4D08-AB20-A6889B70F9EB"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "5F974FE0-93DA-429C-9AE5-58B11E67DACC"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "5F974FE0-93DA-429C-9AE5-58B11E67DACC"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "67472151-B862-437E-9A3B-9D8ABFFE7A0D"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "67472151-B862-437E-9A3B-9D8ABFFE7A0D"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "76974B57-1D21-426D-B704-87F373421021"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "76974B57-1D21-426D-B704-87F373421021"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "8711381D-D5F8-4B74-8C73-870E29F244E8"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "8711381D-D5F8-4B74-8C73-870E29F244E8"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "B927CE62-1B66-43D6-9873-B12542C12915"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "B927CE62-1B66-43D6-9873-B12542C12915"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "D17D6320-CA4F-418F-BBD6-FF45F273B0BE"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "D17D6320-CA4F-418F-BBD6-FF45F273B0BE"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "F30E84FB-A7B5-4A9C-B675-A75A743DC594"
+        },
+        "value": {
+          "@class": "Animation",
+          "id": {
+            "uuid": "F30E84FB-A7B5-4A9C-B675-A75A743DC594"
+          }
+        }
+      }
+    ]
+  },
+  "cameras": {
+    "@class": "StdResourceMapCamera",
+    "map": [
+      {
+        "key": {
+          "uuid": "99DE5B61-6462-40B9-A813-FBA5AA0FB737"
+        },
+        "value": {
+          "@class": "Camera",
+          "id": {
+            "uuid": "99DE5B61-6462-40B9-A813-FBA5AA0FB737"
+          }
+        }
+      }
+    ]
+  },
+  "colliders": {
+    "@class": "StdResourceMapCollider",
+    "map": [
+      {
+        "key": {
+          "uuid": "3BF92E38-04DF-46A6-A60E-CB76667083A9"
+        },
+        "value": {
+          "@class": "Collider",
+          "id": {
+            "uuid": "3BF92E38-04DF-46A6-A60E-CB76667083A9"
+          }
+        }
+      }
+    ]
+  },
+  "images": {
+    "@class": "StdResourceMapImage",
+    "map": [
+      {
+        "key": {
+          "uuid": "D6B9EBE3-D3D6-444C-8F37-F86FC7039750"
+        },
+        "value": {
+          "@class": "DevILImage",
+          "id": {
+            "uuid": "D6B9EBE3-D3D6-444C-8F37-F86FC7039750"
+          }
+        }
+      }
+    ]
+  },
+  "lights": {
+    "@class": "StdResourceMapLight",
+    "map": []
+  },
+  "materials": {
+    "@class": "StdResourceMapMaterial",
+    "map": [
+      {
+        "key": {
+          "uuid": "24E507AA-D1F6-440C-9560-E54B9D0CFE5B"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "24E507AA-D1F6-440C-9560-E54B9D0CFE5B"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "4D48F86D-ECE2-462D-8509-5CC70644CDBC"
+        },
+        "value": {
+          "@class": "Material",
+          "id": {
+            "uuid": "4D48F86D-ECE2-462D-8509-5CC70644CDBC"
+          }
+        }
+      }
+    ]
+  },
+  "meshes": {
+    "@class": "StdResourceMapMesh",
+    "map": [
+      {
+        "key": {
+          "uuid": "03AE1255-1B79-436D-9B64-FF472C9FE2B3"
+        },
+        "value": {
+          "@class": "BoxMesh",
+          "id": {
+            "uuid": "03AE1255-1B79-436D-9B64-FF472C9FE2B3"
+          }
+        }
+      },
+      {
+        "key": {
+          "uuid": "2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"
+        },
+        "value": {
+          "@class": "Mesh",
+          "id": {
+            "uuid": "2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"
+          }
+        }
+      }
+    ]
+  },
+  "rigidBodies": {
+    "@class": "StdResourceMapPhysicsBody",
+    "map": [
+      {
+        "key": {
+          "uuid": "70D69DB0-8308-441B-BD47-892C70F11781"
+        },
+        "value": {
+          "@class": "PhysicsBody",
+          "id": {
+            "uuid": "70D69DB0-8308-441B-BD47-892C70F11781"
+          }
+        }
+      }
+    ]
+  },
+  "scenes": {
+    "@class": "StdResourceMapScene",
+    "map": [
+      {
+        "key": {
+          "uuid": "1C435217-1F56-4B14-B162-D5571841CD11"
+        },
+        "value": {
+          "@class": "BaseScene",
+          "id": {
+            "uuid": "1C435217-1F56-4B14-B162-D5571841CD11"
+          }
+        }
+      }
+    ]
+  },
+  "textures2d": {
+    "@class": "StdResourceMapTexture2D",
+    "map": [
+      {
+        "key": {
+          "uuid": "9F6B5CB4-A449-40E5-BC41-C65F6EB0A7F0"
+        },
+        "value": {
+          "@class": "Texture2D",
+          "id": {
+            "uuid": "9F6B5CB4-A449-40E5-BC41-C65F6EB0A7F0"
+          }
+        }
+      }
+    ]
+  },
+  "texturesCube": {
+    "@class": "StdResourceMapTextureCube",
+    "map": []
+  }
+}

@@ -1,1 +1,764 @@
-{"@class":"BaseScene","id":{"uuid":"1C435217-1F56-4B14-B162-D5571841CD11"},"name":"Level","nodes":[{"@class":"BaseNode","object3D":{"@class":"BaseObject3D","id":{"uuid":"243649C0-D7F6-48FA-A44E-36AD29632827"},"name":"UserRootObject","enabled":true,"visible":false,"hitVisible":true,"transform":{"@class":"BaseComponentTransformable","localTransforms":{"values":[1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0]}},"metadata":{"importedIdentifier":"","importedName":"","isBone":false}},"children":["D8E1D3DE-2BB8-4152-AD73-D8CFD5761AB5","A0DAFCA4-98B7-44FF-B61E-24DDEDB47BB9","69B3343E-0E21-4C30-8FA4-BC470CC0CAF2"]},{"@class":"BaseNode","color_index":2,"object3D":{"@class":"BaseObject3D","id":{"uuid":"D8E1D3DE-2BB8-4152-AD73-D8CFD5761AB5"},"name":"MainCamera","enabled":true,"visible":true,"hitVisible":true,"camera":{"@class":"BaseComponentCamera","cameraId":{"uuid":"99DE5B61-6462-40B9-A813-FBA5AA0FB737"}},"transform":{"@class":"BaseComponentTransformable","localTransforms":{"values":[1.0000001192092896,-2.8418201125646193e-8,1.7763570511584874e-15,0.0,2.7986514439248823e-8,0.9848096370697022,-0.17364861071109773,0.0,4.934778807808016e-9,0.17364861071109773,0.9848096370697022,0.0,0.0,4.0,15.0,1.0]}},"metadata":{"importedIdentifier":"","importedName":"","isBone":false}}},{"@class":"BaseNode","color_index":5,"object3D":{"@class":"BaseObject3D","id":{"uuid":"A0DAFCA4-98B7-44FF-B61E-24DDEDB47BB9"},"name":"MainCharacter","enabled":true,"visible":true,"hitVisible":true,"spawner":{"@class":"BaseComponentSpawner","characterScriptId":{"uuid":"CCE70F4E-1368-4374-B62D-B7FD0C83A0A1"}},"transform":{"@class":"BaseComponentTransformable","localTransforms":{"values":[1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0]}},"metadata":{"importedIdentifier":"","importedName":"","isBone":false}}},{"@class":"BaseNode","color_index":6,"object3D":{"@class":"BaseObject3D","id":{"uuid":"69B3343E-0E21-4C30-8FA4-BC470CC0CAF2"},"name":"Item 1","enabled":true,"visible":true,"hitVisible":false,"colliders":[{"@class":"BaseComponentCollider","colliderId":{"uuid":"3BF92E38-04DF-46A6-A60E-CB76667083A9"}}],"geometry":{"@class":"BaseComponentGeometry","meshId":{"uuid":"2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"},"static":false,"shadowCast":true,"shadowReceive":true},"material":{"@class":"BaseComponentMaterial","materialId":{"uuid":"4D48F86D-ECE2-462D-8509-5CC70644CDBC"},"mapsStates":127},"rigidBody":{"@class":"BaseComponentPhysBody","rigidBodyId":{"uuid":"70D69DB0-8308-441B-BD47-892C70F11781"},"isEnabled":true},"transform":{"@class":"BaseComponentTransformable","localTransforms":{"values":[1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0]}},"metadata":{"importedIdentifier":"Plane_zero","importedName":"Plane_zero","isBone":false}},"asset_id":{"uuid":"2C3ADF7E-395B-47DA-9A78-3DBE397225B5"},"is_asset_root":true,"asset_name":"Floor_200x200"}],"scriptSystem":{"@class":"BaseScriptSystem","scripts":[{"@class":"Script_SkyBox","id":{"uuid":"8BC74022-8583-422A-9F4E-C2DDD5EFCD8C"}},{"@class":"Script_Sun","id":{"uuid":"99414E6E-C0D9-4511-BD4A-47AFEFB847BC"}},{"@class":"Script_Gravity","id":{"uuid":"491640B4-ECC9-4D7F-A974-76614E9934F6"}},{"@class":"CameraFollowScript","id":{"uuid":"D6A12A30-455A-4626-8C82-C73F110BC9F1"}},{"@class":"Script_PostFX","id":{"uuid":"E8A9D4B2-4E99-406A-861B-6BA10BE5AA4A"}}]},"assetsNames":[{"key":{"uuid":"2C3ADF7E-395B-47DA-9A78-3DBE397225B5"},"value":"Floor_200x200"}]}
+{
+  "@class": "BaseScene",
+  "id": {
+    "uuid": "1C435217-1F56-4B14-B162-D5571841CD11"
+  },
+  "name": "Level",
+  "nodes": [
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "243649C0-D7F6-48FA-A44E-36AD29632827"
+        },
+        "name": "UserRootObject",
+        "enabled": true,
+        "visible": false,
+        "hitVisible": true,
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      },
+      "children": [
+        "D8E1D3DE-2BB8-4152-AD73-D8CFD5761AB5",
+        "A0DAFCA4-98B7-44FF-B61E-24DDEDB47BB9",
+        "69B3343E-0E21-4C30-8FA4-BC470CC0CAF2",
+        "D3FA0987-F198-44D0-8419-73CFD58145D9"
+      ]
+    },
+    {
+      "@class": "BaseNode",
+      "color_index": 2,
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "D8E1D3DE-2BB8-4152-AD73-D8CFD5761AB5"
+        },
+        "name": "MainCamera",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "camera": {
+          "@class": "BaseComponentCamera",
+          "cameraId": {
+            "uuid": "99DE5B61-6462-40B9-A813-FBA5AA0FB737"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1.0000001192092896,
+              -2.8418201125646192e-08,
+              1.7763570511584873e-15,
+              0,
+              2.7986514439248822e-08,
+              0.9848096370697021,
+              -0.17364861071109772,
+              0,
+              4.934778807808016e-09,
+              0.17364861071109772,
+              0.9848096370697021,
+              0,
+              0,
+              4,
+              15,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "color_index": 5,
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "A0DAFCA4-98B7-44FF-B61E-24DDEDB47BB9"
+        },
+        "name": "MainCharacter",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "spawner": {
+          "@class": "BaseComponentSpawner",
+          "characterScriptId": {
+            "uuid": "CCE70F4E-1368-4374-B62D-B7FD0C83A0A1"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "color_index": 6,
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "69B3343E-0E21-4C30-8FA4-BC470CC0CAF2"
+        },
+        "name": "Item 1",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": false,
+        "colliders": [
+          {
+            "@class": "BaseComponentCollider",
+            "colliderId": {
+              "uuid": "3BF92E38-04DF-46A6-A60E-CB76667083A9"
+            }
+          }
+        ],
+        "geometry": {
+          "@class": "BaseComponentGeometry",
+          "meshId": {
+            "uuid": "2DFB2E0B-E99A-4A53-8D30-B57257AF17EB"
+          },
+          "static": false,
+          "shadowCast": true,
+          "shadowReceive": true
+        },
+        "material": {
+          "@class": "BaseComponentMaterial",
+          "materialId": {
+            "uuid": "4D48F86D-ECE2-462D-8509-5CC70644CDBC"
+          },
+          "mapsStates": 127
+        },
+        "rigidBody": {
+          "@class": "BaseComponentPhysBody",
+          "rigidBodyId": {
+            "uuid": "70D69DB0-8308-441B-BD47-892C70F11781"
+          },
+          "isEnabled": true
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "Plane_zero",
+          "importedName": "Plane_zero",
+          "isBone": false
+        }
+      },
+      "asset_id": {
+        "uuid": "2C3ADF7E-395B-47DA-9A78-3DBE397225B5"
+      },
+      "is_asset_root": true,
+      "asset_name": "Floor_200x200"
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "D3FA0987-F198-44D0-8419-73CFD58145D9"
+        },
+        "name": "Box",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "geometry": {
+          "@class": "BaseComponentGeometry",
+          "meshId": {
+            "uuid": "03AE1255-1B79-436D-9B64-FF472C9FE2B3"
+          },
+          "static": false,
+          "shadowCast": true,
+          "shadowReceive": true
+        },
+        "material": {
+          "@class": "BaseComponentMaterial",
+          "materialId": {
+            "uuid": "24E507AA-D1F6-440C-9560-E54B9D0CFE5B"
+          },
+          "mapsStates": 0
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      },
+      "children": [
+        "5BFC1598-E9CA-4BE6-9A5C-555446A1ECC3",
+        "AE2CD836-7B80-4617-B60F-1EC81AA5CC70",
+        "D33A8B57-4F95-4DA8-BFBE-589A352E5C02",
+        "63303A24-F224-499A-8EDC-643DD0C2BE6D",
+        "CB4C8F79-5E3C-44E6-B944-23DDD821B5F1",
+        "1ED2D372-0A10-4E7E-B7BB-F684B5B47B85",
+        "DBEAA789-CBA2-490A-AA7D-E0848144E0D9",
+        "1D92EF16-249E-4670-B9AD-A9B8054717A4"
+      ]
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "5BFC1598-E9CA-4BE6-9A5C-555446A1ECC3"
+        },
+        "name": "Box Animation",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "7FE4753C-A1BF-4B4C-AF4E-38829EDD785C"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "AE2CD836-7B80-4617-B60F-1EC81AA5CC70"
+        },
+        "name": "Play Box Animation 1",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "D15B2825-4CEB-4196-B839-338F7FEF15AD"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "D33A8B57-4F95-4DA8-BFBE-589A352E5C02"
+        },
+        "name": "Play Box Animation 2",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "B80212CE-2B50-44AC-92BC-7A5F49DAD1CC"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "63303A24-F224-499A-8EDC-643DD0C2BE6D"
+        },
+        "name": "Play Box Animation 3",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "3FCCCAC2-D191-4795-948F-B11C88BEA202"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "CB4C8F79-5E3C-44E6-B944-23DDD821B5F1"
+        },
+        "name": "Play Box Animation 4",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "D4791F13-0136-4695-AA37-3558F83580FF"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "1ED2D372-0A10-4E7E-B7BB-F684B5B47B85"
+        },
+        "name": "Play Box Animation 5",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "01E73FDC-08F1-4634-863F-7BDEAA3D8C9C"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "DBEAA789-CBA2-490A-AA7D-E0848144E0D9"
+        },
+        "name": "Play Box Animation 6",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "E82F1F94-E9C5-4E88-9261-B06B4DC299B8"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    },
+    {
+      "@class": "BaseNode",
+      "object3D": {
+        "@class": "BaseObject3D",
+        "id": {
+          "uuid": "1D92EF16-249E-4670-B9AD-A9B8054717A4"
+        },
+        "name": "Play Box Animation 7",
+        "enabled": true,
+        "visible": true,
+        "hitVisible": true,
+        "timeline": {
+          "@class": "BaseComponentTimeline",
+          "timelineId": {
+            "uuid": "438D8FB3-0086-413D-8EFE-6893B679C80E"
+          }
+        },
+        "transform": {
+          "@class": "BaseComponentTransformable",
+          "localTransforms": {
+            "values": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        "metadata": {
+          "importedIdentifier": "",
+          "importedName": "",
+          "isBone": false
+        }
+      }
+    }
+  ],
+  "scriptSystem": {
+    "@class": "BaseScriptSystem",
+    "scripts": [
+      {
+        "@class": "Script_SkyBox",
+        "id": {
+          "uuid": "8BC74022-8583-422A-9F4E-C2DDD5EFCD8C"
+        }
+      },
+      {
+        "@class": "Script_Sun",
+        "id": {
+          "uuid": "99414E6E-C0D9-4511-BD4A-47AFEFB847BC"
+        }
+      },
+      {
+        "@class": "Script_Gravity",
+        "id": {
+          "uuid": "491640B4-ECC9-4D7F-A974-76614E9934F6"
+        }
+      },
+      {
+        "@class": "CameraFollowScript",
+        "id": {
+          "uuid": "D6A12A30-455A-4626-8C82-C73F110BC9F1"
+        }
+      },
+      {
+        "@class": "Script_PostFX",
+        "id": {
+          "uuid": "E8A9D4B2-4E99-406A-861B-6BA10BE5AA4A"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "7FE4753C-A1BF-4B4C-AF4E-38829EDD785C"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "D15B2825-4CEB-4196-B839-338F7FEF15AD"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "B80212CE-2B50-44AC-92BC-7A5F49DAD1CC"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "3FCCCAC2-D191-4795-948F-B11C88BEA202"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "D4791F13-0136-4695-AA37-3558F83580FF"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "01E73FDC-08F1-4634-863F-7BDEAA3D8C9C"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "E82F1F94-E9C5-4E88-9261-B06B4DC299B8"
+        }
+      },
+      {
+        "@class": "TimeLineScript",
+        "id": {
+          "uuid": "438D8FB3-0086-413D-8EFE-6893B679C80E"
+        }
+      }
+    ]
+  },
+  "assetsNames": [
+    {
+      "key": {
+        "uuid": "2C3ADF7E-395B-47DA-9A78-3DBE397225B5"
+      },
+      "value": "Floor_200x200"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "@class": "TimeLineScript",
+  "id": {
+    "uuid": "B80212CE-2B50-44AC-92BC-7A5F49DAD1CC"
+  },
+  "name": "Animation",
+  "enableOnAwake": false,
+  "loop": false,
+  "jumpToFirstFrameAtEnd": false,
+  "speed": 1,
+  "weight": 1,
+  "loopStartTime": 0,
+  "loopDuration": 0,
+  "is_imported": false,
+  "type": "user",
+  "scripts": {
+    "@class": "StdListRuntimeScript",
+    "list": [
+      {
+        "@class": "AnimationScript",
+        "id": {
+          "uuid": "1A18F3F5-7A5B-4E2A-9CA6-143591520650"
+        },
+        "name": "Inserted animations",
+        "enableOnAwake": false,
+        "OwnerLink": {
+          "@class": "BindingLink"
+        },
+        "animation": {
+          "uuid": "F30E84FB-A7B5-4A9C-B675-A75A743DC594"
+        },
+        "AnimationType": "timeline",
+        "is_imported": false,
+        "isEnabled": true
+      }
+    ]
+  },
+  "triggers": [
+    {
+      "@class": "KeyTrigger",
+      "id": {
+        "uuid": "3D12960E-2592-4FF8-A98D-BAB4CB57741E"
+      },
+      "ownerScriptId": {
+        "uuid": "B80212CE-2B50-44AC-92BC-7A5F49DAD1CC"
+      },
+      "logicOperation": 0,
+      "resultType": 0,
+      "isInverted": false,
+      "keyCode": 50,
+      "state": 2
+    }
+  ]
+}
